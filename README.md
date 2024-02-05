@@ -1,6 +1,6 @@
 # Android 14 Features
 - ScreenShot Detection API done ✅
-  ![ScreenShot-Detection](https://developer.android.com/static/about/versions/14/images/screenshot-detection.svg)
+  ![ShareSheet-Custom-Actions](https://developer.android.com/static/about/versions/14/images/sharesheet-android14.png | width=300)
 - Grammatical inflection API done ✅
   **Demo**
 - ShareSheet Custom Actions done ✅
