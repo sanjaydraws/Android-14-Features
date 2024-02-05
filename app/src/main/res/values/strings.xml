@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android14Features</string>
+    <string name="gender_title">Person 🧑</string>
+
 </resources>

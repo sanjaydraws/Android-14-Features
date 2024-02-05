@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.sanjaydraws.android14features.databinding.ActivityMainBinding
+import com.sanjaydraws.android14features.ui.GrammticalInflectionApiActivity
 import com.sanjaydraws.android14features.ui.ScreenShotDetectionActivity
 import com.sanjaydraws.android14features.ui.ShareSheetActivity
 import com.sanjaydraws.android14features.utils.SnackBarUtils
@@ -33,8 +34,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
         binding?.btnShareSheet?.setOnClickListener {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
                 ShareSheetActivity.start(this)
+//            } else {
+//                binding?.root?.let { SnackBarUtils.showSnackBar(it,"Screenshot detection Api is not supported below Android 14",3000) }
+//            }
+        }
+        binding?.btnGrammaticalInflectionApi?.setOnClickListener {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                GrammticalInflectionApiActivity.start(this)
             } else {
                 binding?.root?.let { SnackBarUtils.showSnackBar(it,"Screenshot detection Api is not supported below Android 14",3000) }
             }
