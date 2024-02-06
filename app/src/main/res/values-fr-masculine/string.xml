@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="gender_title">homme 👦</string>
+    <string name="cat_title">chat 🐱</string>
+
 </resources>

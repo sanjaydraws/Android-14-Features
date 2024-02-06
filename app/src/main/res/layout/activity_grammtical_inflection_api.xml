@@ -17,6 +17,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@id/btnFaminine"
+            android:foreground="?attr/selectableItemBackground"
+            android:backgroundTint="@color/violet"
+            android:textSize="18sp"
             />
         <Button
             android:id="@+id/btnFaminine"
@@ -27,6 +30,9 @@
             app:layout_constraintStart_toEndOf="@id/btnMasculine"
             app:layout_constraintTop_toTopOf="@id/btnMasculine"
             app:layout_constraintEnd_toStartOf="@id/btnNueter"
+            android:foreground="?attr/selectableItemBackground"
+            android:backgroundTint="@color/violet"
+            android:textSize="18sp"
             />
         <Button
             android:id="@+id/btnNueter"
@@ -37,6 +43,9 @@
             app:layout_constraintStart_toEndOf="@id/btnFaminine"
             app:layout_constraintTop_toTopOf="@id/btnMasculine"
             app:layout_constraintEnd_toEndOf="parent"
+            android:foreground="?attr/selectableItemBackground"
+            android:backgroundTint="@color/violet"
+            android:textSize="18sp"
             />
 
         <TextView
@@ -48,7 +57,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:text="@string/gender_title"
             android:textSize="40sp"
+            android:id="@+id/personTitle"
             />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/personTitle"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/cat_title"
+            android:textSize="40sp"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
