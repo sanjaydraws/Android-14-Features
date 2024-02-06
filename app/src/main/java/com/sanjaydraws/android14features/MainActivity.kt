@@ -1,12 +1,10 @@
 package com.sanjaydraws.android14features
 
-import android.app.Activity
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import com.sanjaydraws.android14features.databinding.ActivityMainBinding
 import com.sanjaydraws.android14features.ui.GrammticalInflectionApiActivity
 import com.sanjaydraws.android14features.ui.ScreenShotDetectionActivity
@@ -37,14 +35,15 @@ class MainActivity : AppCompatActivity() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
                 ShareSheetActivity.start(this)
             } else {
-                binding?.root?.let { SnackBarUtils.showSnackBar(it,"Sharesheet custom Action is not supported below Android 14",3000) }
+                binding?.root?.let { SnackBarUtils.showSnackBar(it,"ShareSheet custom Action is not supported below Android 14",3000) }
             }
         }
         binding?.btnGrammaticalInflectionApi?.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
                 GrammticalInflectionApiActivity.start(this)
             } else {
-                binding?.root?.let { SnackBarUtils.showSnackBar(it,"Grammtical Inflection Api is not supported below Android 14",3000) }
+                binding?.root?.let { SnackBarUtils.showSnackBar(it,"Grammtical " +
+                        "Inflection Api is not supported below Android 14",3000) }
             }
         }
     }

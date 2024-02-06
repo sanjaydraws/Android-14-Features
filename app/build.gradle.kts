@@ -3,6 +3,13 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+
+val versionMajor = 1
+val versionMinor = 0
+val versionPatch = 0
+val appVersion = "${versionMajor}.${versionMinor}.${versionPatch}"
+val appVersionCode = versionMajor * 1000 + versionMinor * 100 + versionPatch
+
 android {
     namespace = "com.sanjaydraws.android14features"
     compileSdk = 34
@@ -11,8 +18,8 @@ android {
         applicationId = "com.sanjaydraws.android14features"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = appVersionCode
+        versionName = appVersion
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
